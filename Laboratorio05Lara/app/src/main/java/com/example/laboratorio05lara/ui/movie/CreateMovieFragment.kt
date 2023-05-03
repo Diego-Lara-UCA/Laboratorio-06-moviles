@@ -52,10 +52,10 @@ class CreateMovieFragment : Fragment() {
 
     private fun createMovie(){
         val newMoview = MovieModel(
-            name.toString(),
-            category.toString(),
-            description.toString(),
-            calification.toString()
+            name.text.toString(),
+            category.text.toString(),
+            description.text.toString(),
+            calification.text.toString()
         )
         viewModel.addMovies(newMoview)
 
